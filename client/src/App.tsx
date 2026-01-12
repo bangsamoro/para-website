@@ -8,8 +8,8 @@ import Home from "./pages/Home";
 import Guide from "./pages/Guide";
 import GitHub from "./pages/GitHub";
 
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />
