@@ -64,19 +64,15 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/guide">
-                  <a>
-                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
-                      Learn PARA <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
-                  </a>
+                <Link href="/guide" className="inline-block">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
+                    Learn PARA <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
                 </Link>
-                <Link href="/guide">
-                  <a>
-                    <Button size="lg" variant="outline" className="border-border">
-                      View Examples
-                    </Button>
-                  </a>
+                <Link href="/guide" className="inline-block">
+                  <Button size="lg" variant="outline" className="border-border">
+                    View Examples
+                  </Button>
                 </Link>
               </div>
 
@@ -295,12 +291,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="/guide">
-                <a>
-                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
-                    Read Full Guide <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </a>
+              <Link href="/guide" className="inline-block">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
+                  Read Full Guide <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
               </Link>
             </div>
           </div>
