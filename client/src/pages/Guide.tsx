@@ -17,24 +17,18 @@ export default function Guide() {
       {/* Navigation */}
       <nav className="border-b border-border sticky top-0 bg-white z-50">
         <div className="container flex items-center justify-between py-4">
-          <Link href="/">
-            <a className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">P</span>
-              </div>
-              <span className="font-bold text-lg text-primary">PARA</span>
-            </a>
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">P</span>
+            </div>
+            <span className="font-bold text-lg text-primary">PARA</span>
           </Link>
           <div className="flex items-center gap-6">
-            <Link href="/">
-              <a className="text-sm text-foreground hover:text-accent transition-colors">
-                Home
-              </a>
+            <Link href="/" className="text-sm text-foreground hover:text-accent transition-colors">
+              Home
             </Link>
-            <Link href="/guide">
-              <a className="text-sm text-accent font-semibold">
-                Guide
-              </a>
+            <Link href="/guide" className="text-sm text-accent font-semibold">
+              Guide
             </Link>
             <Button size="sm" className="bg-accent hover:bg-accent/90">
               Get Started
@@ -625,12 +619,10 @@ export default function Guide() {
             <Button size="lg" className="bg-white text-primary hover:bg-slate-100">
               Get Started Now
             </Button>
-            <Link href="/">
-              <a>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                  Back to Home
-                </Button>
-              </a>
+            <Link href="/" className="inline-block">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                Back to Home
+              </Button>
             </Link>
           </div>
         </div>
@@ -655,8 +647,8 @@ export default function Guide() {
             <div>
               <h4 className="font-bold text-primary mb-4">Learn</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/"><a className="hover:text-accent transition-colors">Home</a></Link></li>
-                <li><Link href="/guide"><a className="hover:text-accent transition-colors">Guide</a></Link></li>
+                <li><Link href="/" className="hover:text-accent transition-colors">Home</Link></li>
+                <li><Link href="/guide" className="hover:text-accent transition-colors">Guide</Link></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Examples</a></li>
               </ul>
             </div>
