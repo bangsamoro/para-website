@@ -27,12 +27,15 @@ export default function Home() {
             <a href="#about" className="text-sm text-foreground hover:text-accent transition-colors">
               About
             </a>
-            <a href="#categories" className="text-sm text-foreground hover:text-accent transition-colors">
+            <Link href="/guide" className="text-sm text-foreground hover:text-accent transition-colors">
               Categories
-            </a>
-            <a href="#implementation" className="text-sm text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link href="/github" className="text-sm text-foreground hover:text-accent transition-colors">
+              GitHub
+            </Link>
+            <Link href="/" className="text-sm text-foreground hover:text-accent transition-colors">
               Implementation
-            </a>
+            </Link>
             <Button size="sm" className="bg-accent hover:bg-accent/90">
               Get Started
             </Button>
